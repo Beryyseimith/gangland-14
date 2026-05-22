@@ -96,14 +96,14 @@
   - type: BallisticAmmoProvider
     proto: ShellShotgunSlugArmorPiercing
   - type: MagazineVisuals
-    magState: mag-alt
+    magState: mag-slug
     steps: 5
     zeroVisible: false
   - type: Sprite
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
-    - state: mag-alt-1
+    - state: mag-slug-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: slug
     #- state: armorpiercing GL14 - TO CHANGE!
