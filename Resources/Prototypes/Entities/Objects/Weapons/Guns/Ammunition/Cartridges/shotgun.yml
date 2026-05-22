@@ -53,6 +53,21 @@
     state: "slug"
 
 - type: entity
+  parent: [ BaseShellShotgun, BaseSecurityContraband]
+  id: ShellShotgunSlugArmorPiercing
+  name: shell (.50 armor-piercing slug)
+  #description: The standard cartridge used by most modern shotguns. Slug ammunition contains a single high-density projectile effective at longer ranges than pellet ammunition.
+  components:
+  - type: Sprite
+    layers:
+    - state: slug #armorpiercing GL14
+      map: [ "enum.AmmoVisualLayers.Base" ]
+  - type: CartridgeAmmo
+    proto: PelletShotgunSlugArmorPiercing
+  - type: SpentAmmoVisuals
+    state: "slug" #"armorpiercing" # From GL14
+
+- type: entity
   parent: BaseShellShotgun
   id: ShellShotgunFlare
   name: shell (.50 flare)

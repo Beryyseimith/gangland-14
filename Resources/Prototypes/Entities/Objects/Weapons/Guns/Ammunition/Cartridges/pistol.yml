@@ -27,10 +27,10 @@
     proto: BulletPistol
 
 - type: entity
+  parent: BaseCartridgePistol
   id: CartridgePistolArmorPiercing
   name: cartridge (.35 auto ap)
   description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Punches through armor.
-  parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
     proto: BulletPistolArmorPiercing

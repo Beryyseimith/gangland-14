@@ -58,6 +58,22 @@
 
 - type: entity
   parent: BaseMagazineBoxLightRifle
+  id: MagazineBoxLightRifleArmorPiercing
+  name: ammunition box (.30 rifle ap)
+  description: A cardboard box of .30 rifle rounds. Intended to hold armor-piercing ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeLightRifleArmorPiercing
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    #- state: armorpiercing GL14 - TO CHANGE!
+
+- type: entity
+  parent: BaseMagazineBoxLightRifle
   id: MagazineBoxLightRiflePractice
   name: ammunition box (.30 rifle practice)
   description: A cardboard box of .30 rifle rounds. Intended to hold harmless practice ammunition.
