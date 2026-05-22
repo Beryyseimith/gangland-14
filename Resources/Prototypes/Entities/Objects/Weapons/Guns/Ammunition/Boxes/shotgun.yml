@@ -109,9 +109,6 @@
     #- state: armorpiercing GL14 - TO CHANGE!
 
 - type: entity
-  name: ammunition box (12 Gauge flare) # Goob edit
-
-- type: entity
   parent: AmmoProviderShotgunShell
   id: BoxShotgunFlare
   name: ammunition box (.50 flare)
