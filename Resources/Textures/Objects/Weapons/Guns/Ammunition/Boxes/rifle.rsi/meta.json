@@ -39,6 +39,9 @@
     },
     {
       "name": "uranium"
-    }
+    },
+	{
+	  "name": "armorpiercing"
+	}
   ]
 }
