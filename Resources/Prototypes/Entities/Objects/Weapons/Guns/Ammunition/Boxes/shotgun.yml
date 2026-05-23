@@ -89,6 +89,27 @@
 
 - type: entity
   parent: AmmoProviderShotgunShell
+  id: BoxShotgunSlugArmorPiercing
+  name: ammunition box (.50 armor-piercing slug)
+  description: A cardboard box of .50 shotgun shells. Intended to hold long-ranged armor-piercing slug ammunition.
+  components:
+  - type: BallisticAmmoProvider
+    proto: ShellShotgunSlugArmorPiercing
+  - type: MagazineVisuals
+    magState: mag-slug
+    steps: 5
+    zeroVisible: false
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-slug-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: slug
+    #- state: armorpiercing GL14 - TO CHANGE!
+
+- type: entity
+  parent: AmmoProviderShotgunShell
   id: BoxShotgunFlare
   name: ammunition box (.50 flare)
   description: A cardboard box of .50 shotgun shells. Intended to hold illuminating flare ammunition.

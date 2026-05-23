@@ -28,6 +28,22 @@
 
 - type: entity
   parent: BaseCartridgePistol
+  id: CartridgePistolArmorPiercing
+  name: cartridge (.35 auto ap)
+  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Punches through armor.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletPistolArmorPiercing
+  -  type: Sprite
+     layers:
+     - state: base
+       map: [ "enum.AmmoVisualLayers.Base" ]
+     - state: tip
+       map: [ "enum.AmmoVisualLayers.Tip" ]
+       color: "#575757" # From GL14
+
+- type: entity
+  parent: BaseCartridgePistol
   id: CartridgePistolPractice
   name: cartridge (.35 auto practice)
   description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.

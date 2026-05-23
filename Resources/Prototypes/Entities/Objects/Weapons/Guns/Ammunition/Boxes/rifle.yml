@@ -62,6 +62,21 @@
 
 - type: entity
   parent: BaseMagazineBoxRifle
+  id: MagazineBoxRifleArmorPiercing
+  name: ammunition box (.20 rifle ap)
+  components:
+  - type: BallisticAmmoProvider
+    proto: CartridgeRifleArmorPiercing
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    #- state: armorpiercing GL14 - TO CHANGE!
+
+- type: entity
+  parent: BaseMagazineBoxRifle
   id: MagazineBoxRiflePractice
   name: ammunition box (.20 rifle practice)
   description: A cardboard box of .20 rifle rounds. Intended to hold harmless practice ammunition.
@@ -107,4 +122,3 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: uranium
-

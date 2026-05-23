@@ -10,9 +10,22 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 40
-        Structural: 15
+        Piercing: 50
 
+- type: entity
+  id: PelletShotgunSlugArmorPiercing
+  name: pellet (.50ap slug)
+  categories: [ HideSpawnMenu ]
+  parent: BaseBullet
+  components:
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
+    state: slug
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 37
+      armorPenetration: 0.6 #From GL14 - buffed this from .5 because it wasn't effective at all while testing. might increase other ap bullet types but for now im justifying this with the reasoning of slugs packing a bigger punch
 
 - type: entity
   parent: BaseBullet

@@ -28,6 +28,21 @@
 
 - type: entity
   parent: BaseCartridgeRifle
+  id: CartridgeRifleArmorPiercing
+  name: cartridge (.20 rifle ap)
+  components:
+  - type: CartridgeAmmo
+    proto: BulletRifleArmorPiercing
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#575757" # From GL14
+
+- type: entity
+  parent: BaseCartridgeRifle
   id: CartridgeRiflePractice
   name: cartridge (.20 rifle practice)
   description: A modern intermediate cartridge for combat rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.

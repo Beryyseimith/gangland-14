@@ -28,6 +28,22 @@
 
 - type: entity
   parent: BaseCartridgeLightRifle
+  id: CartridgeLightRifleArmorPiercing
+  name: cartridge (.30 rifle ap)
+  description: A classic intermediate cartridge used by many combat rifles and LMGs. Punches through armor.
+  components:
+  - type: CartridgeAmmo
+    proto: BulletLightRifleArmorPiercing
+  - type: Sprite
+    layers:
+    - state: base
+      map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: tip
+      map: [ "enum.AmmoVisualLayers.Tip" ]
+      color: "#575757" # From GL14
+
+- type: entity
+  parent: BaseCartridgeLightRifle
   id: CartridgeLightRiflePractice
   name: cartridge (.30 rifle practice)
   description: A classic intermediate cartridge used by many combat rifles and LMGs. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.

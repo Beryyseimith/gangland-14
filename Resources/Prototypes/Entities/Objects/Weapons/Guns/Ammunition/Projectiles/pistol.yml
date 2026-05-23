@@ -7,7 +7,19 @@
   - type: Projectile
     damage:
       types:
-        Piercing: 16
+        Piercing: 25
+
+- type: entity
+  id: BulletPistolArmorPiercing
+  name: bullet (.35 auto ap)
+  parent: BaseBullet
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 19
+      armorPenetration: 0.5 #From GL14
 
 - type: entity
   parent: BaseBulletPractice
