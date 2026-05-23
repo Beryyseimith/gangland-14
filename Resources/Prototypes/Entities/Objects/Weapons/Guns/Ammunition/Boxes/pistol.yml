@@ -54,7 +54,7 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-    #- state: armorpiercing GL14 - TO CHANGE!
+    - state: armorpiercing
 
 - type: entity
   parent: BaseMagazineBoxPistol
